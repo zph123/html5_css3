@@ -1,0 +1,24 @@
+{
+    "title": "快简编码",
+    "description": "zph code",
+    "language": "zh-hans",
+    "plugins": [
+	    "expandable-chapters-small",
+	    "prism", 
+	    "-highlight",
+	    "header"
+    ],
+    "pluginsConfig": {
+        "expandable-chapters-small":{},
+		"prism": {
+			"css": [
+				"prismjs/themes/prism-solarizedlight.css"
+			]
+		},
+		"layout": {
+	      "headerPath" : "layouts/header.html"
+	    }
+    }
+
+    
+}
