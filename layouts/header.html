@@ -1,9 +1,30 @@
 <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?25b397dc879bf25fc1aab9ea859bee93";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?25b397dc879bf25fc1aab9ea859bee93";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+
+
+var ws = new WebSocket("ws://www.zphteach.com:8181");
+ws.onopen = function(){
+// Web Socket 已连接上，使用 send() 方法发送数据
+ws.send("open");
+};
+ws.onmessage = function (evt) 
+{ 
+var received_msg = evt.data+"人";
+console.log(evt)
+app.sites=[{ name: received_msg },{ name: '简洁' },
+            { name: '实用' }]
+           
+//alert("数据已接收...("+received_msg+")");
+};
+ws.onclose = function(){ 
+// 关闭 websocket
+//alert("连接已关闭..."); 
+};
+
 </script>

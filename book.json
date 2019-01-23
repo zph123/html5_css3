@@ -5,7 +5,8 @@
     "plugins": [
 	    "expandable-chapters-small",
 	    "prism", 
-	    "-highlight"
+	    "-highlight",
+	    "header"
     ],
     "pluginsConfig": {
         "expandable-chapters-small":{},
@@ -13,7 +14,10 @@
 			"css": [
 				"prismjs/themes/prism-solarizedlight.css"
 			]
-		}
+		},
+		"layout": {
+	      "headerPath" : "layouts/header.html"
+	    }
     }
 
     
