@@ -1,6 +1,7 @@
 {
     "title": "快简编码",
-    "description": "zph code",
+    "description": "快",
+    "keywords": "keyword1,keyword2,keyword3",
     "language": "zh-hans",
     "plugins": [
 	    "expandable-chapters-small",
